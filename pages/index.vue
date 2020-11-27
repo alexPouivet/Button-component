@@ -1,73 +1,88 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        Button-component
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+  <div>
+    <header>
+      <h1>Buttons</h1>
+    </header>
+    <main>
+      <div class="main">
+        <div class="lign">
+          <div class="button-container">
+            <p>< Button /></p>
+            <b-button class="button-classic">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button variant="outline" /></p>
+            <b-button class="button-variant-outline">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button variant="text" /></p>
+            <b-button class="button-variant-text">Default</b-button>
+          </div>
+        </div>
+        <div class="lign">
+          <div class="button-container">
+            <p>< Button disableShadow /></p>
+            <b-button  class="button-disableShadow">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button disabled /></p>
+            <b-button disabled class="button-disabled">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button variant="text" disabled /></p>
+            <b-button disabled class="button-variant-text-disabled">Default</b-button>
+          </div>
+        </div>
+        <div class="lign">
+          <div class="button-container">
+            <p>< Button startIcon="local_grocery_store" /></p>
+            <b-button  class="button-startIcon"><i class="material-icons">local_grocery_store</i>Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button endIcon="local_grocery_store" /></p>
+            <b-button  class="button-endIcon">Default<i class="material-icons">local_grocery_store</i></b-button>
+          </div>
+        </div>
+        <div class="lign">
+          <div class="button-container">
+            <p>< Button size="sm" /></p>
+            <b-button size="sm" class="button-small">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button size="md" /></p>
+            <b-button class="button-medium">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button size="lg" /></p>
+            <b-button size="lg" class="button-large">Default</b-button>
+          </div>
+        </div>
+        <div class="lign">
+          <div class="button-container">
+            <p>< Button color="default" /></p>
+            <b-button class="button-classic">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button color="primary" /></p>
+            <b-button variant="primary" class="button-color-primary">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button color="secondary" /></p>
+            <b-button variant="secondary" class="button-color-secondary">Default</b-button>
+          </div>
+          <div class="button-container">
+            <p>< Button color="danger" /></p>
+            <b-button variant="danger" class="button-color-danger">Default</b-button>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
+    <footer>
+      <p>Alexandre Pouivet @DevChallenges.io</p>
+    </footer>
   </div>
 </template>
 
 <script>
 export default {}
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
